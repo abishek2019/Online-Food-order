@@ -1,9 +1,15 @@
-<div>
-<div class="box" *ngFor="let eachFood of foodList" (click)="seeFoodDetails$(eachFood)">
-    <img [src]="eachFood.img" alt="Food Item">
-    <div>{{eachFood.foodName}}</div>
-    <div>Price: ${{eachFood.price}}</div>
-    <div>Delivery Time: {{eachFood.deliveryTime}} mins</div>
-  </div><br>
-</div>
-<app-cart-info></app-cart-info>
+ <h1 style="text-align: center">ORDER ONLINE</h1>
+ <div class="main-box">
+   <div class="box">
+     <div class="data-container"  *ngFor="let eachFood of foodList">
+       <img (click)="seeFoodDetails$(eachFood)" [src]="eachFood.img" alt="Food Item">
+       <p>{{eachFood.foodName}}</p>
+       <p>Price: ${{eachFood.price}}</p>
+       <p>Delivery Time: {{eachFood.deliveryTime}} mins</p>
+     </div>
+   </div>
+   <div class="sidebar">
+     <app-cart-info></app-cart-info>
+   </div>
+ </div>
+

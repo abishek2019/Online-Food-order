@@ -4,6 +4,7 @@ import {CartContent} from '../../model/cartContent';
 import {FoodService} from '../../services/food.service';
 import {Subject} from 'rxjs';
 import {Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-cart-info',
@@ -17,7 +18,8 @@ export class CartInfoComponent implements OnInit, OnDestroy {
 
   constructor(
     private foodService: FoodService,
-    private router: Router
+    private router: Router,
+    private toasterService: ToastrService
   ) {
   }
 
@@ -28,7 +30,7 @@ export class CartInfoComponent implements OnInit, OnDestroy {
         let sum: number;
         sum = 0;
         this.cartContent.forEach(element => {
-          sum += element.price;
+          sum += Number(element.price);
         });
         this.totalPrice = Number(sum);
       });
@@ -36,6 +38,12 @@ export class CartInfoComponent implements OnInit, OnDestroy {
 
   checkout = () => {
     this.router.navigate(['/', 'cart']).then();
+  }
+
+  empty = () => {
+    this.cartContent = [];
+    this.foodService.Cart.next(this.cartContent);
+    this.toasterService.success('Cart Emptied', 'SUCCESS');
   }
 
   ngOnDestroy(): void {

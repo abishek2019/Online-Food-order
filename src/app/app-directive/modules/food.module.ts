@@ -8,6 +8,8 @@ import {ToastrModule} from 'ngx-toastr';
 import {CartCheckoutComponent} from '../components/cart-checkout/cart-checkout.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {CartInfoComponent} from '../components/cartInfo/cart-info.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [FoodMenuComponent, FoodDetailComponent, CartCheckoutComponent, CartInfoComponent],
@@ -16,10 +18,12 @@ import {CartInfoComponent} from '../components/cartInfo/cart-info.component';
     HttpClientModule,
     ToastrModule.forRoot({
       timeOut: 1000,
-      positionClass: 'toast-top-left',
+      progressBar: true,
       preventDuplicates: true
     }),
+    BrowserAnimationsModule,
     ReactiveFormsModule,
+    RouterModule,
   ],
   providers: [FoodService]
 })

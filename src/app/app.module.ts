@@ -7,9 +7,8 @@ import {LoginComponent} from './app-directive/components/login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FoodModule} from './app-directive/modules/food.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { FooterComponent } from './app-directive/containers/footer/footer.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CartInfoComponent } from './app-directive/components/cartInfo/cart-info.component';
+import {FooterComponent} from './app-directive/containers/footer/footer.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [

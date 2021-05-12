@@ -1,0 +1,61 @@
+.menu {
+  cursor: pointer;
+  margin-left: 20px;
+  width: fit-content;
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-div {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 40%;
+}
+
+img {
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  width: 50%;
+}
+
+.sidebar {
+  flex-grow: 1;
+  flex-basis: 300px;
+  align-self: start;
+  position: sticky;
+}
+
+.content {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.content .info {
+  font-weight: bold;
+}
+
+button {
+  font-size: 12px;
+  background-color: lightgreen;
+  border: 1px solid green;
+  color: black;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+

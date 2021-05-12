@@ -1,11 +1,10 @@
-import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {filter, takeUntil} from 'rxjs/operators';
 import {FoodService} from '../../services/food.service';
 import {Subject} from 'rxjs';
 import {CartContent} from '../../model/cartContent';
-import {Router} from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ToastrService} from 'ngx-toastr';
-import {CartInfoComponent} from '../cartInfo/cart-info.component';
 
 @Component({
   selector: 'app-cart-checkout',
@@ -15,19 +14,27 @@ import {CartInfoComponent} from '../cartInfo/cart-info.component';
 export class CartCheckoutComponent implements OnInit, OnDestroy {
   checkoutContent?: Array<CartContent>;
   paymentForm?: FormGroup;
-  @ViewChild(CartInfoComponent, {static: false}) child;
+  totalPrice?: number;
   private unSubscribe$ = new Subject<void>();
 
   constructor(
     private foodService: FoodService,
-    private router: Router,
     private fb: FormBuilder,
     private toasterService: ToastrService
   ) {
   }
 
   ngOnInit(): void {
-    this.checkoutContent = this.child.checkoutContent;
+    this.foodService.cartContent.pipe(takeUntil(this.unSubscribe$), filter(data => data != null))
+      .subscribe((cartContent: Array<CartContent>) => {
+        this.checkoutContent = cartContent;
+        let sum: number;
+        sum = 0;
+        this.checkoutContent.forEach(element => {
+          sum += Number(element.price);
+        });
+        this.totalPrice = Number(sum);
+      });
     this.initPaymentForm();
   }
 
@@ -44,8 +51,13 @@ export class CartCheckoutComponent implements OnInit, OnDestroy {
 
   submitPayment$ = () => {
     this.toasterService.success('Payment Done.', 'SUCCESS');
-    console.log('Payment info is:');
-    console.log(this.paymentForm.value);
+    console.log(`Payment info is:`);
+    console.log(`Username: ${this.paymentForm.value.name}`);
+    console.log(`Contact: ${this.paymentForm.value.contact}`);
+    console.log(`Credit Card Num: ${this.paymentForm.value.creditCard}`);
+    console.log(`Card type: ${this.paymentForm.value.cardType}`);
+    console.log(`Pin: ${this.paymentForm.value.pin}`);
+    console.log(`Amount: $${this.totalPrice}`);
   }
 
   ngOnDestroy(): void {

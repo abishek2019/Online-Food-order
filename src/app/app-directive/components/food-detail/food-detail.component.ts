@@ -5,6 +5,7 @@ import {FoodService} from '../../services/food.service';
 import {filter, takeUntil} from 'rxjs/operators';
 import {Subject} from 'rxjs';
 import {CartContent} from '../../model/cartContent';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-food-detail',
@@ -20,6 +21,7 @@ export class FoodDetailComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private foodService: FoodService,
+    private toasterService: ToastrService
   ) {
   }
 
@@ -51,8 +53,9 @@ export class FoodDetailComponent implements OnInit, OnDestroy {
         price: foodDetail.price
       });
     }
+    this.toasterService.success('Added to cart.', 'SUCCESS');
     this.foodService.cartAdd$(this.cartContent);
-  }
+  };
 
 
   ngOnDestroy(): void {

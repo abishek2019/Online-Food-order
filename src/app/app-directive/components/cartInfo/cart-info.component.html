@@ -1,11 +1,17 @@
-<div>
-  <h3>Cart</h3>
-  <div *ngIf="!cartContent.length; else temp">No items.</div>
+<div class="box">
+  <h3 style="text-align: center">Cart</h3>
+  <div style="text-align: center">
+    <div *ngIf="cartContent.length; else temp" class="content">
+      <div *ngFor="let content of cartContent">
+        {{content.food}} * {{content.quantity}} = ${{content.price}}
+      </div>
+      <hr>
+      <h6>Total : ${{totalPrice}}</h6>
+    </div>
+    <button [disabled]="!cartContent.length" class="button buttonCheckout" (click)="checkout()">Checkout</button>
+    <button [disabled]="!cartContent.length" class="button buttonEmpty" (click)="empty()">Empty Cart</button>
+  </div>
 </div>
 <ng-template #temp>
-  <div *ngFor="let content of cartContent">
-    <span>{{content.food}} * {{content.quantity}} = ${{content.price}}</span>
-  </div>
-  <h5>Total : {{totalPrice}}</h5>
-  <button (click)="checkout()">Checkout</button>
+  <div style="text-transform: capitalize; font-weight: bold">Your cart is empty.</div>
 </ng-template>
