@@ -1,0 +1,30 @@
+.container {
+  cursor: pointer;
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block; /* remove extra space below image */
+}
+.box{
+  cursor: pointer;
+  width: 350px;
+  height: 350px;
+  border: 5px solid white;
+}
+
+

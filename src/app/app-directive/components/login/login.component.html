@@ -1,0 +1,19 @@
+<div class="page">
+  <div class="container">
+    <div class="left">
+      <div class="login">Login</div>
+      <div [ngStyle]="{'color': !matchNull? '#474A59' : '#FF0000'}" class="quote">{{quote}}</div>
+    </div>
+    <div class="right">
+      <form [formGroup]="loginForm" (ngSubmit)="submitLogin$()">
+        <div class="form">
+          <label for="username">Username</label>
+          <input type="text" id="username" formControlName="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" formControlName="password">
+          <input type="submit" id="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

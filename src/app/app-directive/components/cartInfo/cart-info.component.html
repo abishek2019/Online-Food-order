@@ -1,0 +1,11 @@
+<div>
+  <h3>Cart</h3>
+  <div *ngIf="!cartContent.length; else temp">No items.</div>
+</div>
+<ng-template #temp>
+  <div *ngFor="let content of cartContent">
+    <span>{{content.food}} * {{content.quantity}} = ${{content.price}}</span>
+  </div>
+  <h5>Total : {{totalPrice}}</h5>
+  <button (click)="checkout()">Checkout</button>
+</ng-template>

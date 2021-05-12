@@ -1,0 +1,9 @@
+<h1>{{foodDetail.foodName}}</h1>
+<img [src]="foodDetail.img" alt="Food Item">
+<div>Price: ${{foodDetail.price}}</div>
+<div>Delivery Time: {{foodDetail.deliveryTime}}</div>
+<div>{{foodDetail.detail}}</div>
+<div>
+  <button (click)="cartAdd(foodDetail)">Add to Cart</button>
+</div>
+<app-cart-info></app-cart-info>

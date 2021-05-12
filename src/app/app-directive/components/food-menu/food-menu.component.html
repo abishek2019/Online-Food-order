@@ -1,0 +1,9 @@
+<div>
+<div class="box" *ngFor="let eachFood of foodList" (click)="seeFoodDetails$(eachFood)">
+    <img [src]="eachFood.img" alt="Food Item">
+    <div>{{eachFood.foodName}}</div>
+    <div>Price: ${{eachFood.price}}</div>
+    <div>Delivery Time: {{eachFood.deliveryTime}} mins</div>
+  </div><br>
+</div>
+<app-cart-info></app-cart-info>

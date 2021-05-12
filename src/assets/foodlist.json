@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1-500x500.jpg",
+      "foodName": "Pizza",
+      "price": 12,
+      "deliveryTime": 30,
+      "detail": "Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven.[1] A small pizza is sometimes called a pizzetta. A person who makes pizza is known as a pizzaiolo.\n\nIn Italy, pizza served in formal settings, such as at a restaurant, is presented unsliced, and is eaten with the use of a knife and fork.[2][3] In casual settings, however, it is cut into wedges to be eaten while held in the hand."
+    },
+    {
+      "img": "https://img-global.cpcdn.com/recipes/2da8cad7018f8486/680x482cq70/veg-steamed-momos-recipe-main-photo.webp",
+      "foodName": "Momo",
+      "price": 10,
+      "deliveryTime": 20,
+      "detail": "Momo is a type of East and South Asian steamed filled dumpling.[1] Momo is native to Nepal, Southwest Tibet, Bhutan as well as Indian Himalayan Region of Ladakh, Sikkim, Assam, and Arunachal Pradesh, Himachal Pradesh, Uttarakhand, and Darjeeling.[1] It is popular across a wider region of the Indian subcontinent. Momo is similar to Chinese baozi, jiaozi, and mantou, Mongolian buuz, Japanese gyoza, Korean mandu and Turkic manti, but heavily influenced by cuisine of the Indian subcontinent with South Asian spices and herbs. Momos are extremely popular and can be found in every kind of shop from restaurants to street vendors.[1]"
+    },
+    {
+      "img": "https://www.spendwithpennies.com/wp-content/uploads/2020/02/Chow-Mein-SWP-6.jpg",
+      "foodName": "Chow mein",
+      "price": 10,
+      "deliveryTime": 20,
+      "detail": "Chow mein (/ˈtʃaʊ ˈmeɪn/ and /ˈtʃaʊ ˈmiːn/, simplified Chinese: 炒面; traditional Chinese: 炒麵; Pinyin: chǎomiàn) are Chinese stir-fried noodles with vegetables and sometimes meat or tofu; the name is a romanization of the Taishanese chāu-mèn. The dish is popular throughout the Chinese diaspora and appears on the menus of most Chinese restaurants abroad.[1] It is particularly popular in India,[2] Nepal,[3] the UK,[4] and the US.[5]"
+    },
+    {
+      "img": "https://106fyz3cd4vi2lc2uq1tlyl4-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/Moist-Chicken-Burgers.jpg",
+      "foodName": "Hamburger",
+      "price": 8,
+      "deliveryTime": 15,
+      "detail": "A hamburger (also burger for short) is a sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun. The patty may be pan fried, grilled, smoked or flame broiled. Hamburgers are often served with cheese, lettuce, tomato, onion, pickles, bacon, or chiles; condiments such as ketchup, mustard, mayonnaise, relish, or a \"special sauce\", often a variation of Thousand Island dressing; and are frequently placed on sesame seed buns. A hamburger topped with cheese is called a cheeseburger.[1]\n\nThe term \"burger\" can also be applied to the meat patty on its own, especially in the United Kingdom, where the term \"patty\" is rarely used, or the term can even refer simply to ground beef. Since the term hamburger usually implies beef, for clarity \"burger\" may be prefixed with the type of meat or meat substitute used, as in beef burger, turkey burger, bison burger, or veggie burger."
+    },
+    {
+      "img": "https://stripedspatula.com/wp-content/uploads/2019/03/reuben-sandwich-recipe-5-680x952.jpg",
+      "foodName": "Chicken sandwich",
+      "price": 5,
+      "deliveryTime": 10,
+      "detail": "In North America, the sandwich usually consists of a chicken filet or patty, toppings and bread. The chicken meat can be deep fried, grilled, roasted or boiled, served hot or cold, and white or dark meat chicken can be used. Shredded chicken in one form or another, such as chicken salad, can also be used in chicken sandwiches. Another form is made with cold cuts. Wrap versions of the sandwich can also be made, in which the ingredients are rolled up inside a flatbread, such as a tortilla. Open-faced versions of the sandwich, which feature hot chicken served with gravy on top of bread, are also common variations."
+    },
+    {
+      "img": "https://pinchofyum.com/wp-content/uploads/Vegan-Vodka-Pasta-4.jpg",
+      "foodName": "Pasta",
+      "price": 7,
+      "deliveryTime": 16,
+      "detail": "Pasta (US: /ˈpɑːstə/, UK: /ˈpæstə/; Italian pronunciation: [ˈpasta]) is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking. Rice flour, or legumes such as beans or lentils, are sometimes used in place of wheat flour to yield a different taste and texture, or as a gluten-free alternative. Pasta is a staple food of Italian cuisine.[1][2]\n\nPastas are divided into two broad categories: dried (pasta secca) and fresh (pasta fresca). Most dried pasta is produced commercially via an extrusion process, although it can be produced at home. Fresh pasta is traditionally produced by hand, sometimes with the aid of simple machines.[3] Fresh pastas available in grocery stores are produced commercially by large-scale machines."
+    },
+    {
+      "img": "https://natashaskitchen.com/wp-content/uploads/2019/02/Greek-Salad-768x1152.jpg",
+      "foodName": "Salad",
+      "price": 4,
+      "deliveryTime": 5,
+      "detail": "A salad is a dish consisting of mixed pieces of food, sometimes with at least one raw ingredient. It is often dressed, and is typically served at room temperature or chilled, though some can be served warm.\n\nGarden salads use a base of leafy greens such as lettuce, arugula/rocket, kale or spinach; they are common enough that the word salad alone often refers specifically to garden salads. Other types include bean salad, tuna salad, fattoush, Greek salad (vegetable-based, but without leafy greens), and sōmen salad (a noodle-based salad). The sauce used to flavor a salad is generally called a salad dressing; most salad dressings are based on either a mixture of oil and vinegar or a fermented milk product like kefir."
+    },
+    {
+      "img": "https://upload.wikimedia.org/wikipedia/commons/9/91/Gorp.jpg",
+      "foodName": "Snacks",
+      "price": 3,
+      "deliveryTime": 5,
+      "detail": "A snack is a small portion of food generally eaten between meals.[1] Snacks come in a variety of forms including packaged snack foods and other processed foods, as well as items made from fresh ingredients at home.\n\nTraditionally, snacks are prepared from ingredients commonly available at home without a great deal of preparation. Often cold cuts, fruits, leftovers, nuts, sandwiches, and sweets are used as snacks. With the spread of convenience stores, packaged snack foods became a significant business.\n\nSnack foods are typically designed to be portable, quick, and satisfying. Processed snack foods, as one form of convenience food, are designed to be less perishable, more durable, and more portable than prepared foods. They often contain substantial amounts of sweeteners, preservatives, and appealing ingredients such as chocolate, peanuts, and specially-designed flavors (such as flavored potato chips)."
+    }
+  ],
+  "meta": null
+}
