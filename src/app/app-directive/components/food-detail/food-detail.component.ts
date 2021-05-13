@@ -55,7 +55,7 @@ export class FoodDetailComponent implements OnInit, OnDestroy {
     }
     this.toasterService.success('Added to cart.', 'SUCCESS');
     this.foodService.cartAdd$(this.cartContent);
-  };
+  }
 
 
   ngOnDestroy(): void {

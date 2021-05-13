@@ -48,4 +48,10 @@ input[type=submit]:hover {
   text-align: left;
 }
 
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 

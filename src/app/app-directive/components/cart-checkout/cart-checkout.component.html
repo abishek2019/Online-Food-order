@@ -1,53 +1,60 @@
-<h2 style="text-align: center">Checkout</h2>
-<h5 style="text-align: center">You have {{checkoutContent.length}} food {{checkoutContent.length > 1 ? 'items' : 'item'}} in the cart.</h5>
-<table class="styled-table">
-  <thead>
-  <tr>
-    <th>#</th>
-    <th>Food Item</th>
-    <th>Rate($)</th>
-    <th>Quantity</th>
-    <th>Total Price($)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let content of checkoutContent; let i = index">
-    <td>{{i + 1}}</td>
-    <td>{{content.food}}</td>
-    <td>{{content.price / content.quantity}}</td>
-    <td>{{content.quantity}}</td>
-    <td>{{content.price}}</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Total</td>
-    <td></td>
-    <td></td>
-    <td>${{totalPrice}}</td>
-  </tr>
-  </tbody>
-</table>
-<h4 style="text-align: center">Payment Info</h4>
-
-<div class="form-div">
-  <form [formGroup]="paymentForm" (ngSubmit)="submitPayment$()">
-    <label for="userName">Full Name</label>
-    <input type="text" id="userName" formControlName="name" placeholder="Enter full name...">
-
-    <label for="contact">Contact</label>
-    <input type="text" id="contact" formControlName="contact" placeholder="Enter contact num...">
-
-    <label for="card">Credit Card Num</label>
-    <input type="text" id="card" formControlName="creditCard" placeholder="Enter card num...">
-
-    <label for="type">Card Type</label>
-    <input type="text" id="type" formControlName="cardType" placeholder="Enter card type...">
-
-    <label for="pin">Pin</label>
-    <input type="text" id="pin" formControlName="pin" placeholder="Enter pin...">
-
-    <input [disabled]="!paymentForm.valid" type="submit" value="Submit">
-  </form>
+<div class="box">
+  <h2 style="text-align: center">Checkout</h2>
+  <div>
+  <h5 style="text-align: center">You have {{checkoutContent.length}} food {{checkoutContent.length > 1 ? 'items' : 'item'}} in the cart.</h5>
+  <table class="styled-table">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Food Item</th>
+      <th>Rate($)</th>
+      <th>Quantity</th>
+      <th>Total Price($)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let content of checkoutContent; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{content.food}}</td>
+      <td>{{content.price / content.quantity}}</td>
+      <td>{{content.quantity}}</td>
+      <td>{{content.price}}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td></td>
+      <td></td>
+      <td>${{totalPrice}}</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
+  <div>
+    <h4 style="text-align: center">Payment Info</h4>
+    <div class="form-div">
+      <form [formGroup]="paymentForm" (ngSubmit)="submitPayment$()">
+        <label for="userName">Full Name</label>
+        <input type="text" id="userName" formControlName="name" placeholder="Enter full name...">
+
+        <label for="contact">Contact</label>
+        <input type="text" id="contact" formControlName="contact" placeholder="Enter contact num...">
+
+        <label for="card">Credit Card Num</label>
+        <input type="text" id="card" formControlName="creditCard" placeholder="Enter card num...">
+
+        <label for="type">Card Type</label>
+        <input type="text" id="type" formControlName="cardType" placeholder="Enter card type...">
+
+        <label for="pin">Pin</label>
+        <input type="text" id="pin" formControlName="pin" placeholder="Enter pin...">
+
+        <input [disabled]="!paymentForm.valid" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
 
 

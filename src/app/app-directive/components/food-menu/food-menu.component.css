@@ -19,6 +19,11 @@ img {
 }
 
 .data-container {
+  flex-grow: 1;
+  flex-basis: 300px;
+  align-self: start;
+  position: sticky;
+
   padding: 10px;
   width: 50%;
 }
