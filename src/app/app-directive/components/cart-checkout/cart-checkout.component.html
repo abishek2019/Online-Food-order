@@ -1,6 +1,5 @@
 <div class="box">
   <h2 style="text-align: center">Checkout</h2>
-  <div>
   <h5 style="text-align: center">You have {{checkoutContent.length}} food {{checkoutContent.length > 1 ? 'items' : 'item'}} in the cart.</h5>
   <table class="styled-table">
     <thead>
@@ -29,11 +28,10 @@
     </tr>
     </tbody>
   </table>
-</div>
-  <div>
-    <h4 style="text-align: center">Payment Info</h4>
+  <div class="table-box">
     <div class="form-div">
       <form [formGroup]="paymentForm" (ngSubmit)="submitPayment$()">
+        <h4 style="text-align: center">Payment Info</h4>
         <label for="userName">Full Name</label>
         <input type="text" id="userName" formControlName="name" placeholder="Enter full name...">
 

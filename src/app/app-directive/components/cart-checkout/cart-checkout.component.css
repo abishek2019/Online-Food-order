@@ -38,7 +38,6 @@ input[type=submit]:hover {
   border-collapse: collapse;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -52,6 +51,22 @@ input[type=submit]:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center
 }
+
+
+.table-box {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 10px;
+  margin: 20px;
+}
+
 
 
