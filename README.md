@@ -6,6 +6,7 @@ This Angular project has the following features:
 - A MAIN PAGE: The main menu, where a list of food items is shown.
 - A FOOD ITEM DETAIL PAGE: The item detail page that appears after clicking on a food item from the main page.
 - ADD TO CART feature for food items.
+- VIEW CART ITEMS and mock CHECKOUT.
   
 NOTE: This project was created by me for an Angular Job Interview. No codes were copied.
 
